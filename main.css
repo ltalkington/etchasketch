@@ -50,11 +50,10 @@ video {
 }
 
 .box {
-  border: 3px solid;
-  display: float;
-  float: left;
-  width: 40px;
-  height: 40px;
+  border: 1px solid;
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
 }
 
 #flex-container {
@@ -71,10 +70,16 @@ video {
 
 #boxes {
   margin: 10px;
-  width: 65%;
+  width: 100%;
   border: 3px solid;
-  width: 690px;
-  height: 600px;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#boxes > * {
+  flex: 1 1 24%;
 }
 
 .slider {
